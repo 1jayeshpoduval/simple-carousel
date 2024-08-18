@@ -3,6 +3,7 @@ import { images } from "./imagesData.js";
 import { motion, useMotionValue } from "framer-motion";
 import Images from "./Components/Images.jsx";
 import ArrowButton from "./Components/ArrowButton.jsx";
+import Dots from "./Components/Dots.jsx";
 
 function App() {
   const [imageIndex, setImageIndex] = useState(0);
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
       <main>
-        <section className="flex h-screen flex-col overflow-hidden bg-mint-cream py-12">
+        <section className="flex h-screen flex-col overflow-hidden bg-neutral-200 py-12">
           <div className="mx-auto flex h-full w-90% max-w-screen-2xl flex-col items-center justify-center gap-8">
             <ArrowButton
               imageIndex={imageIndex}
@@ -39,6 +40,7 @@ function App() {
             >
               <Images />
             </motion.div>
+            <Dots imageIndex={imageIndex} setImageIndex={setImageIndex} />
           </div>
         </section>
       </main>

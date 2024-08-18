@@ -4,7 +4,7 @@ import { images } from "../imagesData";
 
 const ArrowButton = (props) => {
   const arrowClassname =
-    "flex items-center justify-center rounded-full border border-gunmetal px-8 py-2 text-gunmetal transition-colors hover:bg-gunmetal hover:text-white";
+    "flex items-center justify-center rounded-full border border-black px-8 py-2 text-gunmetal transition-colors hover:bg-black hover:text-white";
 
   const nextImage = () => {
     if (props.imageIndex < images.length - 1) {
